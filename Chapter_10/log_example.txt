@@ -1,0 +1,33 @@
+[INFO] ----------------------------------------------------------------------------
+[INFO] Building Maven Quick Start Archetype
+[INFO]    task-segment: [test]
+[INFO] ----------------------------------------------------------------------------
+[INFO] artifact org.apache.maven.plugins:maven-surefire-plugin: \
+  checking for updates from central
+...
+[INFO] [resources:resources]
+[INFO] [compiler:compile]
+[INFO] Nothing to compile - all classes are up to date
+[INFO] [resources:testResources]
+[INFO] [compiler:testCompile]
+Compiling 1 source file to C:\Test\Maven2\test\my-app\target\test-classes
+...
+[INFO] [surefire:test]
+[INFO] Setting reports dir: C:\Test\Maven2\test\my-app\target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+[surefire] Running com.mycompany.app.AppTest
+[surefire] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0 sec
+
+Results :
+[surefire] Tests run: 1, Failures: 0, Errors: 0
+
+[INFO] ----------------------------------------------------------------------------
+[INFO] BUILD SUCCESSFUL
+[INFO] ----------------------------------------------------------------------------
+[INFO] Total time: 15 seconds
+[INFO] Finished at: Thu Oct 06 08:12:17 MDT 2005
+[INFO] Final Memory: 2M/8M
+[INFO] ----------------------------------------------------------------------------

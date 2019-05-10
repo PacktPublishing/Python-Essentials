@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Komodo Project File - DO NOT EDIT -->
+<project id="1238bda1-07a7-084e-b697-7f3d92b4b6ff" kpf_version="5" name="essentials.komodoproject">
+<preference-set idref="1238bda1-07a7-084e-b697-7f3d92b4b6ff">
+  <string id="import_dirname">/Users/slott/Documents/Writing/Python Essentials</string>
+  <string id="import_exclude_matches">*.*~;*.bak;*.tmp;CVS;.#*;*.pyo;*.pyc;.svn;.git;.hg;.bzr;*%25*;tmp*.html;.DS_Store;*.swp;*.kpf;*.komodoproject;.komodotools;__pycache__</string>
+  <string id="import_include_matches"></string>
+  <string id="last_local_directory">/Users/slott/Documents/Writing/Python Essentials</string>
+  <string id="userEnvironmentStartupOverride">PATH=/usr/bin:/bin:/usr/sbin:/sbin:/Library/Frameworks/Python.framework/Versions/3.3/bin:/usr/texbin
+PYTHONIOENCODING=utf-8
+</string>
+</preference-set>
+</project>

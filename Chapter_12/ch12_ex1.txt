@@ -1,0 +1,9 @@
+#!/usr/bin/env python3
+"""Python Essentials
+
+Chapter 12, Example Set 1
+
+Note that this filename is *.txt, which does work.
+"""
+
+print("hello world")

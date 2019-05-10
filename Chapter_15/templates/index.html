@@ -1,0 +1,78 @@
+{% extends "bootstrap.html" %}
+{% block title %}Index{% endblock %}
+{% block body %}
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 center-text">
+        <h1>Chapter 15, Exercise 4</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-8">
+        <p>Describe your spiral:</p>
+    </div>
+  </div>
+
+  <div class="row">
+      <div class="col-md-8 col-md-offset-1">
+        <form class="form-horizontal" action="." method="POST" enctype="application/x-www-form-urlencoded">
+            <div class="form-group {%if angle_error%}has_error{%endif%}">
+              <label for="angle" class="col-md-2">Angle</label>
+              <div class="col-md-2">
+                <input type="number" class="form-control" id="angle" name="angle" placeholder="65" {%if angle%}value="{{angle}}"{%endif%}>
+              </div>
+              <div class="col-md-3">
+                <p class="help-block">Angle increment.</p>
+                {%if angle_error%}
+                <p class="help-block alert alert-danger">{{angle_error}}</p>
+                {%endif%}
+              </div>
+            </div>
+            <div class="form-group {%if incr_error%}has_error{%endif%}">
+              <label for="incr" class="col-md-2">Increment</label>
+              <div class="col-md-2">
+                <input type="number" class="form-control" id="incr" name="incr" placeholder="105" {%if incr%}value="{{incr}}"{%endif%}>
+              </div>
+              <div class="col-md-3">
+                <p class="help-block">% growth factor.</p>
+                {%if incr_error%}
+                <p class="help-block alert alert-danger">{{incr_error}}</p>
+                {%endif%}
+              </div>
+            </div>
+            <div class="form-group {%if size_error%}has_error{%endif%}">
+              <label for="size" class="col-md-2">Size</label>
+              <div class="col-md-2">
+                <input type="number" class="form-control" id="size" name="size" placeholder="10" {%if size%}value="{{size}}"{%endif%}>
+              </div>
+              <div class="col-md-3">
+                <p class="help-block">Initial segment size.</p>
+                {%if size_error%}
+                <p class="help-block alert alert-danger">{{size_error}}</p>
+                {%endif%}
+              </div>
+            </div>
+            <button type="submit" class="btn btn-default">Draw</button>
+        </form>
+      </div>
+  </div>
+
+  {%if image_path%}
+  <div class="row">
+    <div class="col-md-8">
+      <p></p>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">The Drawing</h3>
+        </div>
+        <div class="panel-body">
+              <img class="img-responsive img-rounded" src="{{image_path|safe}}" alt="image"/>
+        </div>
+      </div>
+    </div>
+  </div>
+  {%endif%}
+
+</div>
+{% endblock %}
